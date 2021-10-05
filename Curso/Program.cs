@@ -9,6 +9,9 @@ namespace CursoEFCore
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //using var db = new Data.ApplicationContext();
+            //db.Database.Migrations();
+
             InserirDados();
         }
         private static void InserirDados()
@@ -26,14 +29,6 @@ namespace CursoEFCore
             var registros = db.SaveChanges();
 
             Console.WriteLine($"Total de Registros(s): {registros}");
-        }
-        private static void RemoverDados()
-        {
-
-        }
-        private static void AtualizarDados()
-        {
-
         }
     }
 }
